@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saffron Table — Reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="home.html" class="nav-brand">Saffron Table</a>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html" class="active">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hours-location.html">Hours</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <h1>Reserve a Table</h1>
+      <p>We'd love to host you for an unforgettable dining experience</p>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="container">
+      <div class="form-container">
+        <form id="reservation-form">
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <!-- Guests and Date -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date">
+            </div>
+          </div>
+
+          <!-- Time and Occasion -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time">
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+                <option value="8:00 PM">8:00 PM</option>
+                <option value="9:00 PM">9:00 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion">
+                <option value="None">None</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Anniversary">Anniversary</option>
+                <option value="Date Night">Date Night</option>
+                <option value="Business Dinner">Business Dinner</option>
+                <option value="Family Gathering">Family Gathering</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Special Notes -->
+          <div class="form-group">
+            <label for="notes">Special Notes</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn">Book My Table</button>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Reservation Policy -->
+    <section class="container text-center">
+      <p>Reservations are held for 15 minutes past the booking time.</p>
+      <p>For parties larger than 10, please call us at (555) 123-4567.</p>
+      <p>Cancellations must be made at least 2 hours in advance.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Saffron Table</h3>
+        <p>Where every dish tells a story. Authentic flavors, warm hospitality, and unforgettable dining experiences.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="menu.html">Our Menu</a>
+        <a href="reservation.html">Reserve a Table</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>123 Flavor Street, Food City</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: hello@saffrontable.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Twitter</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Saffron Table. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
